@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css"  href="./index.css" />
+  <title>WEB rtc</title>
+  <script src="https://cdn-agora.akshatvg.com/sdk-3.1.1.js"></script>
+
+</head>
+<body>
+  <div id="videos">
+    <video class="videp-player" id="user-1" autoplay playsinline></video>
+    <video class="videp-player" id="user-2" autoplay playsinline></video>
+  </div>
+  <button id="create-offer">create offer</button>
+  <label>SDP offer</label>
+  <textarea id="offer-sdp"></textarea>
+
+  <button id="create-answer">create answer</button>
+  <label>SDP answer</label>
+  <textarea id="answer-sdp"></textarea>
+
+  <button id="add-answer">Add Answer</button>
+</body>
+<script src="./agora-rtm-sdk-1.4.4.js"></script>
+<script src="./index.js"></script>
+</html>
